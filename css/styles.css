@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+         url('../fonts/kaushan-script-v8-latin-regular.woff2') format('woff2'),
+         url('../fonts/kaushan-script-v8-latin-regular.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+  
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+  
+
+
+
+
+
+/* background-size: contain; */
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .photography-icon {
+        background-image: url("../img/icons/alarm-icon@2x.png");
+    } 
+    
+    .web-design-icon {
+        background-image: url("../img/icons/line-graph-icon@2x.png");
+    } 
+    .creativity-icon {
+        background-image: url("../img/icons/computer-icon@2x.png");
+    }
+    .seo-icon {
+        background-image: url("../img/icons/book-icon@2x.png");
+    }
+    .css-html-icon {
+        background-image: url("../img/icons/home-icon@2x.png");
+    }
+    .digital-icon {
+        background-image: url("../img/icons/digital-icon@2x.png");
+    }
+}
