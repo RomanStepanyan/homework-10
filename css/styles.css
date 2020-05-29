@@ -35,7 +35,7 @@
 *, *::before, *::after{
     box-sizing: inherit;
 }
-img {
+.image {
     display: block;
     max-width: 100%;
     height: auto;
@@ -102,8 +102,36 @@ html {
 .navigation-link {
     font-size: 14px;
     text-transform: uppercase;
+    position: absolute;
+    padding-bottom: 10px;
+}
+.navigation-link::before, 
+.navigation-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fce38a;
+    transition: width 500ms linear;
+    position: absolute;
+    bottom: 0;
+}
+.navigation-link::before{
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  
+.navigation-link::after{
+    right: 50%;
+    transform: translateX(50%); 
 }
 
+.navigation-link:hover::before, 
+.navigation-link:hover::after{
+    width: 100%;
+}
+.navigation-link:hover {
+    color: #fce38a ;
+} 
 .header-wrapper {
     width: 840px;
 }
@@ -133,7 +161,8 @@ html {
 
 
 
-
+  
+  
 
 
 
