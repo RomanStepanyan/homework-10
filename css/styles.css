@@ -27,6 +27,111 @@
          url('../fonts/montserrat-v14-latin-700.woff') format('woff');
 }
   
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size:0px;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.button {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+.list, .list-item {
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper {
+    margin: 0 auto;
+}
+.header {
+    background-image:linear-gradient(to top, rgba(252,227,138, .9) 0%, rgba(243,129,129, .9) 100%), 
+    url("../img/header-background-image.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin-bottom: 118px;
+    padding-top: 27px;
+    padding-bottom: 230px;
+}
+.header__text {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.logo-link {
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 170px;
+}
+.navigation-list {
+    width: 622px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-link {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header-wrapper {
+    width: 840px;
+}
+.header-description {
+    font-size: 72px;
+    font-family: "Kaushan Script";
+    margin-bottom: 42px;    
+}
+
+.header-title {
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    margin: 0 0 120px;
+}
+.header-button {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid rgb(255, 255, 255);
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+
 
 
 
@@ -35,6 +140,9 @@
 /* background-size: contain; */
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .header {
+        background-image: url("../img/header-background-image@2x.jpg");
+    }
     .photography-icon {
         background-image: url("../img/icons/alarm-icon@2x.png");
     } 
