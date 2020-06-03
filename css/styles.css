@@ -125,8 +125,13 @@ html {
     width: 100%;
 }
 .navigation-link:hover {
-    color: #fce38a ;
-} 
+    color: #fce38a;
+}
+.menu-button:hover .glass-icon,
+.menu-button:hover .shopping-cart-icon {
+    transform: scale(1.2, 1.2)  rotate(1.0turn);
+    transition: all 300ms linear;
+}
 .header-wrapper {
     width: 840px;
 }
