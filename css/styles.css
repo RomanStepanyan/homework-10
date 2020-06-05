@@ -535,7 +535,7 @@ input::placeholder {
     font-style: italic;
     color: rgb(204, 204, 204);
 }
-.footer__list {
+.footer__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
